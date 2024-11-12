@@ -7,8 +7,6 @@ function AmbiguousCase() {
     const [sideB, setC] = useState(0);
     const [tritype, setTri] = useState("Press Calulate");
 
-
-
 function ambigCase(e){
     e.preventDefault();
 
