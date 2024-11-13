@@ -15,15 +15,17 @@ function ambigCase(e){
 return(
     <form onSubmit={(e) => ambigcase(e)}>
     <h1 class="header">Heron's Formula</h1>
-    <label for="sa">Side A: </label>
-    <input type="number" id="sa" name="SideA"></input>
-    <label for="sb">Side B: </label>
-    <input type="number" id="sb" name="SideB"></input>
-    <label for="sc">Side C: </label>
-    <input type="number" id="sc" name="SideC"></input>
-    <label for="ahf">Area:</label>
-    <input type="number" id="ahf" name="areahf" readonly></input>
-    <button type="submit" id="chf" class="calculate">Calculate</button>
+    <label>Side A: </label>
+    <input type="number" value={angleA} onChange={(event) => { setA(event.target.value) }} required />
+    <label>Side B: </label>
+    <input type="number" value={sideA} onChange={(event) => { setA(event.target.value) }} required />
+    <label>Side C: </label>
+    <input type="number" value={sideB} onChange={(event) => { setA(event.target.value) }} required />
+    <label>Area:</label>
+    <input type="text" value={tritype} readOnly />
+    <input type="submit" value="Calculate"/>
     </form>
 )
 }
+
+export default AmbiguousCase;
