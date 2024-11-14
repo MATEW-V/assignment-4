@@ -14,14 +14,14 @@ function ambigCase(e){
 
 return(
     <form onSubmit={(e) => ambigcase(e)}>
-    <h1 class="header">Heron's Formula</h1>
-    <label>Side A: </label>
+    <h1 class="header">Ambiguous Case</h1>
+    <label>Angle A: </label>
     <input type="number" value={angleA} onChange={(event) => { setA(event.target.value) }} required />
+    <label>Side A: </label>
+    <input type="number" value={sideA} onChange={(event) => { setB(event.target.value) }} required />
     <label>Side B: </label>
-    <input type="number" value={sideA} onChange={(event) => { setA(event.target.value) }} required />
-    <label>Side C: </label>
-    <input type="number" value={sideB} onChange={(event) => { setA(event.target.value) }} required />
-    <label>Area:</label>
+    <input type="number" value={sideB} onChange={(event) => { setC(event.target.value) }} required />
+    <label>Triangle Type</label>
     <input type="text" value={tritype} readOnly />
     <input type="submit" value="Calculate"/>
     </form>
