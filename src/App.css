@@ -1,5 +1,5 @@
 .app-container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
