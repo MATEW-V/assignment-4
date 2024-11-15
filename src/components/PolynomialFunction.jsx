@@ -14,7 +14,7 @@ function polyFunc(e){
 }
 
 return( 
-<form onSubmit={(e) => herformula(e)}>
+<form onSubmit={(e) => polyFunc(e)}>
     <h1 class="header">Heron's Formula</h1>
         <label for="sa">Co-efficents: </label>
         <input type="number" value={coEff} onChange={(event) => { setA(event.target.value) }} required />
