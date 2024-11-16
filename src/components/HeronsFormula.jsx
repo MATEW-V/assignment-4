@@ -1,15 +1,16 @@
 import { useState } from 'react';
-import './HeronsFormula.css';
+import './Components.css';
 
 function HeronsFormula() {
-    const [sideA, setA] = useState(0);
-    const [sideB, setB] = useState(0);
-    const [sideC, setC] = useState(0);
+    const [sideA, setA] = useState();
+    const [sideB, setB] = useState();
+    const [sideC, setC] = useState();
     const [area, setArea] = useState("Press Calulate");
 
     function herformula(e) {
         e.preventDefault();
-
+        let area = Math.round((0.25 * (Math.sqrt(4 * sideA ** 2 * sideB ** 2 - (sideA ** 2 + sideB ** 2 - sideC ** 2) ** 2))) * 100) / 100;
+        setArea(area);
     }
 
     return (
