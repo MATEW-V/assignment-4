@@ -8,8 +8,8 @@ import PolynomialFunction from './components/PolynomialFunction.jsx';
 function App() {
   return (
     <div className="app-container">
-      <AmbiguousCase />
       <HeronsFormula />
+      <AmbiguousCase />
       <NewtonsMethod />
       <PolynomialFunction />
     </div>

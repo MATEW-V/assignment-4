@@ -11,7 +11,7 @@ function AmbiguousCase() {
         e.preventDefault();
         let angleA = rangleA * Math.PI / 180;
         let h = sideB * Math.sin(angleA);
-        console.log(rangleA,angleA,h,sideA,sideB);
+        console.log(rangleA, angleA, h, sideA, sideB);
         if (angleA <= 90) { //acute
             if (sideA < h) {
                 setTri("No triangle");
@@ -22,18 +22,15 @@ function AmbiguousCase() {
             } else if (h < sideA < sideB) {
                 setTri("Two triangles (ambiguous case)");
             }
-        }
-        else if (180 > angleA > 90) { //obtus
+        } else if (180 > angleA > 90) { //obtus
             if (sideA < sideB || sideB === sideA) {
                 setTri("No triangle");
             } else if (sideA > sideB) {
                 setTri("One triangle");
             }
-        }
-        else{
+        } else {
             setTri("error");
         }
-
     }
 
     return (
